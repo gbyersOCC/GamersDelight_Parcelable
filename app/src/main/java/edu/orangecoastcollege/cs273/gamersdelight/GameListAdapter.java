@@ -71,7 +71,9 @@ public class GameListAdapter extends ArrayAdapter<Game> {
         RatingBar gameListRatingBar =
                 (RatingBar) view.findViewById(R.id.gameListRatingBar);
 
+        //set TAG TAG TAG
         gameListLinearLayout.setTag(selectedGame);
+
         gameListNameTextView.setText(selectedGame.getName());
         gameListDescriptionTextView.setText(selectedGame.getDescription());
         gameListRatingBar.setRating(selectedGame.getRating());
@@ -91,4 +93,5 @@ public class GameListAdapter extends ArrayAdapter<Game> {
 
         return view;
     }
+
 }

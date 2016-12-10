@@ -49,7 +49,7 @@ class DBHelper extends SQLiteOpenHelper {
 
     //********** DATABASE OPERATIONS:  ADD, GETALL, EDIT, DELETE
 
-    public void addGame(Game game) {
+       public void addGame(Game game) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 

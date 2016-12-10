@@ -39,7 +39,8 @@ public class GameListActivity extends AppCompatActivity {
         gamesListView.setAdapter(gamesListAdapter);
 
     }
-
+//On individual click of a list view item get the Object from tag but and then to start next activit
+// make an intent and put an Extra obj before starting it
     public void viewGameDetails(View view) {
         if (view instanceof LinearLayout) {
             LinearLayout selectedLayout = (LinearLayout) view;
